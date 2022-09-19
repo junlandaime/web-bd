@@ -1,0 +1,10 @@
+Untuk data Product/event, ditambahkan
+ringkasan/excerpt = dari deskripsi (text terbatas)
+kegiatan mulai (tanggal)
+kegiatan selesai (tanggal)
+Biaya Kegiatan (dari Harga)
+Jumlah Pertemuan (integer)
+
+coming soon, pendaftaran, on going, selesai
+
+penutupan kegiatan (tanggal) bisa mah ada H- closed 
