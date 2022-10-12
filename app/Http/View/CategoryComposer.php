@@ -10,7 +10,7 @@ class CategoryComposer
 {
     public function compose(View $view)
     {
-        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token=IGQVJYc2FxemY2M1JpTU53RW5qMzRfQmhWWHIxVnlhX19yaldrWXhxRmxoR05IdVU5R09hZAFU0bGxCSE5ObUVGS3JzRlVKcnFKVGZALeWFyMkNIeUFXZADFGMkZAqWnV2cGtaaEV0czFn')->json();
+        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token=IGQVJXSVVlSjVaeUt4cnFBMTY5Wi1hNTlpTVAxN2dhZAGllSDMxX2JLZA0lsN2V0YjhRTDFOdWRDX054VXVGS2todWdMemt3SlVMV0ZA1eEhIWHptd25CZAXNvSlRKSUpLOXZAnaU9wekJn')->json();
         $photos = [];
         foreach ($resultPhotos['data'] as $photo) {
             $photos[] = $photo['id'];
@@ -19,7 +19,7 @@ class CategoryComposer
 
         $dataPhotos = [];
         foreach ($photos as $photo) {
-            $resultDataPhotos = Http::get("https://graph.instagram.com/$photo?fields=id,media_type,media_url,username,timestamp&access_token=IGQVJYc2FxemY2M1JpTU53RW5qMzRfQmhWWHIxVnlhX19yaldrWXhxRmxoR05IdVU5R09hZAFU0bGxCSE5ObUVGS3JzRlVKcnFKVGZALeWFyMkNIeUFXZADFGMkZAqWnV2cGtaaEV0czFn")->json();
+            $resultDataPhotos = Http::get("https://graph.instagram.com/$photo?fields=id,media_type,media_url,username,timestamp&access_token=IGQVJXSVVlSjVaeUt4cnFBMTY5Wi1hNTlpTVAxN2dhZAGllSDMxX2JLZA0lsN2V0YjhRTDFOdWRDX054VXVGS2todWdMemt3SlVMV0ZA1eEhIWHptd25CZAXNvSlRKSUpLOXZAnaU9wekJn")->json();
             $dataPhoto = [];
             foreach ($resultDataPhotos as $photoss) {
                 $dataPhoto[] = $photoss;

@@ -1946,7 +1946,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 50px; }
   .single-product img {
     margin-bottom: 0px;
-    width: 100%; }
+    width: 100%; 
+    border-radius: 15px;}
   .single-product .product-details h6 {
     margin-top: 10px;
     font-size: 16px;
@@ -3556,7 +3557,8 @@ label {
 
 .filter-bar {
   padding: 0px 20px 10px 20px;
-  background: #61ae5cff; }
+  background: #61ae5cff; 
+  border-radius: 15px}
   .filter-bar a, .filter-bar i {
     color: #000; }
 
@@ -3736,6 +3738,7 @@ label {
   padding: 0 30px;
   font-size: 16px;
   font-weight: 400;
+  border-radius: 15px;
   color: #fff; }
 .sidebar-categories .main-categories {
   padding: 0 20px;
@@ -3766,7 +3769,8 @@ label {
     padding: 0 30px;
     font-size: 16px;
     font-weight: 400;
-    color: #fff; }
+    color: #fff; 
+    border-radius: 15px;}
   .sidebar-filter .head {
     line-height: 60px;
     padding: 0 30px;

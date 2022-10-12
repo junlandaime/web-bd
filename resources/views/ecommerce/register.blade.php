@@ -14,8 +14,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-white mb-2 mt-5">Welcome!</h1>
-                        <p class="text-lead text-white">Use these awesome forms to login or create new account in your
-                            project for free.</p>
+                        {{-- <p class="text-lead text-white">Use these awesome forms to login or create new account in your
+                            project for free.</p> --}}
                     </div>
                 </div>
             </div>
@@ -28,11 +28,11 @@
                             <h5>Register Here</h5>
                         </div>
                         @if (session('success'))
-                            <div class="alert alert-success">{{ session('success') }}</div>
+                            <div class="alert alert-success text-white">{{ session('success') }}</div>
                         @endif
 
                         @if (session('error'))
-                            <div class="alert alert-danger">{{ session('error') }}</div>
+                            <div class="alert alert-danger text-white">{{ session('error') }}</div>
                         @endif
                         <div class="card-body">
                             <form role="form text-left" method="POST" action="{{ route('register') }}">

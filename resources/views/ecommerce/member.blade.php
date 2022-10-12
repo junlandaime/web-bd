@@ -1,65 +1,43 @@
-@extends('layouts.ecommerce')
+@extends('layouts.authmember')
 
 @section('title')
     <title>Member Bidang Dakwah</title>
 @endsection
 
 @section('content')
-    <!-- Jumbotron -->
-
-    <div class="jumbotron jumbotron-fluid" style="background: url({{ asset('priba/img/img14.jpg') }});">
-        <div class="container">
-            <h1 class="display-4">Selamat Datang di <br><span>Bidang Dakwah</span> <br><span>Masjid Salman ITB</span> </h1>
-            <h5>Bidang pengelola kegiatan dakwah dan pelayanan ibadah jamaah <br> yang diselenggarakan oleh YPM Salman ITB
-            </h5>
-            {{-- <a href="#" class="btn btn-info btn-lg tombol">View Our Work</a> --}}
+    <main class="main-content  mt-0">
+        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
+            style="background-image: url('../../../assets/img/curved-images/curved8.jpg');">
+            <span class="mask bg-gradient-dark opacity-6"></span>
         </div>
-    </div>
-    <!-- akhir Jumbotron -->
-
-
-    <!-- container -->
-    <div class="container">
-
-        <!-- info panel -->
-        <div class="row justify-content-center">
-            <div class="col-6 info-panel">
-
-                <div class="card card-info">
-                    <div class="card-header">
-                        <h3 class="card-title">Horizontal Form</h3>
-                    </div>
-
-                    @if (session('error'))
-                        <div class="alert alert-danger">{{ session('error') }}</div>
-                    @endif
-                    <form class="form-horizontal" action="{{ route('front.member_check') }}" method="post"
-                        novalidate="novalidate">
-                        @csrf
-                        <div class="card-body">
-                            <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email"
+        <div class="container">
+            <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                    <div class="card py-lg-3">
+                        <div class="card-body text-center">
+                            <div class="info mb-4">
+                                <img class="avatar avatar-xxl" alt="Image placeholder" src="../../../assets/img/team-4.jpg">
+                            </div>
+                            <h4 class="mb-0 font-weight-bolder">Hai</h4>
+                            <p class="mb-4">Enter email to check your member account.</p>
+                            @if (session('error'))
+                                <div class="alert alert-danger">{{ session('error') }}</div>
+                            @endif
+                            <form class="form-horizontal" action="{{ route('front.member_check') }}" method="post"
+                                novalidate="novalidate">
+                                @csrf
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" aria-label="email"
                                         name="email">
                                 </div>
-                            </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-lg bg-gradient-dark mt-3 mb-0">Check</button>
+                                </div>
+                            </form>
                         </div>
-
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-info">Check</button>
-                        </div>
-
-                    </form>
+                    </div>
                 </div>
-
-
-
             </div>
         </div>
-    </div>
-    <!-- akhir info panel -->
-
-    </div>
-    <!-- akhir container -->
+    </main>
 @endsection

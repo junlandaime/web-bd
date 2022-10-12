@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Ecommerce;
 
 use App\Http\Controllers\Controller;
+use App\Models\Member;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -35,8 +36,9 @@ class LoginController extends Controller
     }
 
     public function dashboard()
-    {
-        return view('ecommerce.dashboard');
+    {   
+        $member = Member::where('id', 1)->first();
+        return view('ecommerce.dashboard', compact('member'));
     }
 
     public function logout()
