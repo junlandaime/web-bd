@@ -65,14 +65,13 @@ class FrontController extends Controller
         $latestVideoId = $result['items'][0]['id']['videoId'];
         $trilatestVideoId = $result['items'];
 
-        $id ='xx';
+        $id = '';
+        $username = Http::get('https://graph.instagram.com/v14.0/17841401381766698?fields=id,username&access_token='. $id)->json()['username'];
 
-        $username = Http::get('https://graph.instagram.com/v14.0/17841401381766698?fields=id,username&access_token=$id')->json()['username'];
+        $result = Http::get('https://api.instagram.com/v1/users/self?access_token='. $id)->json();
+        $result = Http::get('https://api.instagram.com/v1/users/self/media/recent/?access_token=&. $idcount=8')->json();
 
-        $result = Http::get('https://api.instagram.com/v1/users/self?access_token=$id')->json();
-        $result = Http::get('https://api.instagram.com/v1/users/self/media/recent/?access_token=$id&count=8')->json();
-
-        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token=$id')->json();
+        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token='. $id)->json();
         $photos = [];
         foreach ($resultPhotos['data'] as $photo) {
             $photos[] = $photo['id'];
