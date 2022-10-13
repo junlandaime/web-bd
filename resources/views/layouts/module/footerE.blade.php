@@ -47,8 +47,8 @@
             </div>
             <div class="col-lg-3  col-md-6 col-sm-6">
                 <div class="single-footer-widget mail-chimp">
-                    <h6 class="mb-20">Instagram Feed</h6>
-                    <ul class="instafeed d-flex flex-wrap">
+                    <h6 class="mb-20">Thanks From Us</h6>
+                    {{-- <ul class="instafeed d-flex flex-wrap">
                         @foreach ($dataPhotos as $photo)
                             @switch($photo[1])
                                 @case('VIDEO')
@@ -62,7 +62,7 @@
                             @endswitch
                         @endforeach
 
-                    </ul>
+                    </ul> --}}
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">

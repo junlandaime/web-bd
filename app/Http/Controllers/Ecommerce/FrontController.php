@@ -65,13 +65,13 @@ class FrontController extends Controller
         $latestVideoId = $result['items'][0]['id']['videoId'];
         $trilatestVideoId = $result['items'];
 
-        $id = 'IGQVJYZAG83aFpURmQ4R0hpQW1PcGhOb2VteGQtYjhpejVBOGNNVkRORWdTTFRJU2lPXzJFTUp2dzRLTkN4cERGOWV2SVRVVnRLTEpLNTFkTDd0VlNzY0h5d1ZA5MGh4ejlBRkFZAc01R';
-        $username = Http::get('https://graph.instagram.com/v14.0/17841401381766698?fields=id,username&access_token=IGQVJYZAG83aFpURmQ4R0hpQW1PcGhOb2VteGQtYjhpejVBOGNNVkRORWdTTFRJU2lPXzJFTUp2dzRLTkN4cERGOWV2SVRVVnRLTEpLNTFkTDd0VlNzY0h5d1ZA5MGh4ejlBRkFZAc01R')->json()['username'];
+        $id = env('IDIGDEV');
+        $username = Http::get('https://graph.instagram.com/v14.0/17841401381766698?fields=id,username&access_token='.$id)->json()['username'];
 
         // $result = Http::get('https://api.instagram.com/v1/users/self?access_token='. $id)->json();
         // $result = Http::get('https://api.instagram.com/v1/users/self/media/recent/?access_token=&. $idcount=8')->json();
 
-        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token=IGQVJYZAG83aFpURmQ4R0hpQW1PcGhOb2VteGQtYjhpejVBOGNNVkRORWdTTFRJU2lPXzJFTUp2dzRLTkN4cERGOWV2SVRVVnRLTEpLNTFkTDd0VlNzY0h5d1ZA5MGh4ejlBRkFZAc01R')->json();
+        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token='.$id)->json();
         $photos = [];
         foreach ($resultPhotos['data'] as $photo) {
             $photos[] = $photo['id'];
@@ -80,7 +80,7 @@ class FrontController extends Controller
 
         $dataPhotoss = [];
         foreach ($photos as $photo) {
-            $resultDataPhotos = Http::get("https://graph.instagram.com/$photo?fields=id,media_type,media_url,username,timestamp&access_token=IGQVJYZAG83aFpURmQ4R0hpQW1PcGhOb2VteGQtYjhpejVBOGNNVkRORWdTTFRJU2lPXzJFTUp2dzRLTkN4cERGOWV2SVRVVnRLTEpLNTFkTDd0VlNzY0h5d1ZA5MGh4ejlBRkFZAc01R")->json();
+            $resultDataPhotos = Http::get("https://graph.instagram.com/$photo?fields=id,media_type,media_url,username,timestamp&access_token=".$id)->json();
             $dataPhoto = [];
             foreach ($resultDataPhotos as $photoss) {
                 $dataPhoto[] = $photoss;
