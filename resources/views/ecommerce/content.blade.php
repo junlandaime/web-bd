@@ -163,13 +163,16 @@
                     <div class="row mt-3 pb-3">
                         @foreach ($dataPhotoss as $photo)
                             <div class="col-4 col-md-4">
-                                @if ($photo[1] == 'VIDEO')
-                                    <video width="150" height="150">
-                                        <source src="<?= $photo[2] ?>" type="video/mp4" />
-                                    </video>
-                                @else
-                                    <img src="<?= $photo[2] ?>" width="150" height="150" alt="">
-                                @endif
+                                @switch($photo[1])
+                                    @case('VIDEO')
+                                        <video width="70" class="img-thumbnail">
+                                            <source src="{{ $photo[2] }}" type="video/mp4" />
+                                        </video>
+                                    @break
+
+                                    @default
+                                        <li><img src="{{ $photo[2] }}" class="img-thumbnail" alt=""></li>
+                                @endswitch
                             </div>
                             {{-- @switch($photo[1])
                     @case('VIDEO')

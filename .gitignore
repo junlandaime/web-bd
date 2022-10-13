@@ -13,3 +13,5 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/app/Http/View/CategoryComposer.php
+/app/Http/Controllers/Ecommerce/FrontController.php

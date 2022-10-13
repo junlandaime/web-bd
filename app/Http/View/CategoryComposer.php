@@ -10,8 +10,8 @@ class CategoryComposer
 {
     public function compose(View $view)
     {   
-        $id = 'xx';
-        $resultPhotos = Http::get('https://graph.instagram.com/me/media?fields=id,caption&access_token=$id')->json();
+        $id = 'IGQVJYZAG83aFpURmQ4R0hpQW1PcGhOb2VteGQtYjhpejVBOGNNVkRORWdTTFRJU2lPXzJFTUp2dzRLTkN4cERGOWV2SVRVVnRLTEpLNTFkTDd0VlNzY0h5d1ZA5MGh4ejlBRkFZAc01R';
+        $resultPhotos = Http::get("https://graph.instagram.com/me/media?fields=id,caption&access_token=$id")->json();
         $photos = [];
         foreach ($resultPhotos['data'] as $photo) {
             $photos[] = $photo['id'];

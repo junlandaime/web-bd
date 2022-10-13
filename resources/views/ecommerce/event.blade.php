@@ -71,7 +71,7 @@
 
                     </ul>
                 </div>
-                <div class="sidebar-filter mt-50">
+                {{-- <div class="sidebar-filter mt-50">
                     <div class="top-filter-head">By Tags</div>
                     <div class="common-filter">
                         <div class="head">Brands</div>
@@ -84,7 +84,7 @@
                         </form>
                     </div>
 
-                </div>
+                </div> --}}
             </div>
             <div class="col-xl-9 col-lg-8 col-md-7">
                 <!-- Start Filter Bar -->
