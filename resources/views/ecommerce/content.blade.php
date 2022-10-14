@@ -12,7 +12,7 @@
 @section('content')
     <!-- Jumbotron -->
 
-    <div class="jumbotron jumbotron-fluid" style="background: url({{ asset('priba/img/img55.jpg') }});">
+    <div class="jumbotron jumbotron-fluid" style="background: url({{ asset('' . env('linkpub') . 'priba/img/img55.jpg') }});">
         <div class="container">
             <h1 class="display-4">Selamat Datang di <br><span>Bidang Dakwah</span> <br><span>Masjid Salman ITB</span> </h1>
             <h5>Bidang pengelola kegiatan dakwah dan pelayanan ibadah jamaah <br> yang diselenggarakan oleh YPM Salman ITB

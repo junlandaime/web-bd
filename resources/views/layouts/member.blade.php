@@ -4,21 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('pro/assets/img/apple-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ asset('pro/assets/img/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('' . env('linkpub') . 'pro/assets/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('' . env('linkpub') . 'pro/assets/img/favicon.png') }}">
 
     @yield('title')
 
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 
-    <link href="{{ asset('pro/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
-    <link href="{{ asset('pro/assets/css/nucleo-svg.css"') }} rel="stylesheet" />
+    <link href="{{ asset('' . env('linkpub') . 'pro/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
+    <link href="{{ asset('' . env('linkpub') . 'pro/assets/css/nucleo-svg.css"') }} rel="stylesheet" />
 
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="{{ asset('pro/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
+    <link href="{{ asset('' . env('linkpub') . 'pro/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
 
-    <link id="pagestyle" href="{{ asset('pro/assets/css/soft-ui-dashboard.min.css?v=1.1.0') }}" rel="stylesheet" />
+    <link id="pagestyle" href="{{ asset('' . env('linkpub') . 'pro/assets/css/soft-ui-dashboard.min.css?v=1.1.0') }}"
+        rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -128,15 +129,15 @@
         </div>
     </div>
     <!--   Core JS Files   -->
-    <script src="{{ asset('pro/assets/js/core/popper.min.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/core/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/chartjs.min.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/dragula/dragula.min.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/jkanban/jkanban.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/threejs.js') }}"></script>
-    <script src="{{ asset('pro/assets/js/plugins/orbit-controls.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/core/popper.min.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/core/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/chartjs.min.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/dragula/dragula.min.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/jkanban/jkanban.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/threejs.js') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/plugins/orbit-controls.js') }}"></script>
     <script>
         var ctx = document.getElementById("chart-bars").getContext("2d");
 
@@ -436,7 +437,7 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="{{ asset('pro/assets/js/soft-ui-dashboard.min.js?v=1.1.0') }}"></script>
+    <script src="{{ asset('' . env('linkpub') . 'pro/assets/js/soft-ui-dashboard.min.js?v=1.1.0') }}"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
         integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
         data-cf-beacon='{"rayId":"75804a81a9e2880e","token":"1b7cbb72744b40c580f8633c6b62637e","version":"2022.8.1","si":100}'

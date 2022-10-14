@@ -10,19 +10,19 @@
 	<!--
 			CSS
 			============================================= -->
-	<link rel="stylesheet" href="{{ asset('karma/css/linearicons.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/font-awesome.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/themify-icons.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/bootstrap.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/owl.carousel.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/nice-select.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/nouislider.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('karma/css/ion.rangeSlider.css') }}" />
-	<link rel="stylesheet" href="{{ asset('karma/css/ion.rangeSlider.skinFlat.css') }}" />
-	<link rel="stylesheet" href="{{ asset('karma/css/main.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/linearicons.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/themify-icons.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/owl.carousel.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/nouislider.min.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/ion.rangeSlider.css') }}" />
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/ion.rangeSlider.skinFlat.css') }}" />
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'karma/css/main.css') }}">
 
 	{{-- my css --}}
-	<link rel="stylesheet" href="{{ asset('priba/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset(''. env('linkpub') .'priba/css/style.css') }}">
 
 	{{-- my font --}}
 	  <!-- Google Fonts -->
@@ -34,13 +34,13 @@
 
   {{-- <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="{{ asset('priba/img/logoBD.png') }}" alt="Bidang Dakwah Logo"  width="100">
+    <img class="animation__shake" src="{{ asset(''. env('linkpub') .'priba/img/logoBD.png') }}" alt="Bidang Dakwah Logo"  width="100">
   </div> --}}
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="/"><img src="{{ asset('priba/img/logoBD.png') }}" width="30" >Bidang Dakwah</a>
+      <a class="navbar-brand" href="/"><img src="{{ asset(''. env('linkpub') .'priba/img/logoBD.png') }}" width="30" >Bidang Dakwah</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -61,7 +61,7 @@
 
 	<!-- Jumbotron -->
   
-	<div class="jumbotron jumbotron-fluid" style="background: url({{ asset('priba/img/image17.png') }});">
+	<div class="jumbotron jumbotron-fluid" style="background: url({{ asset(''. env('linkpub') .'priba/img/image17.png') }});">
 	<div class="container">
 	  <h1 class="display-4">Selamat Datang di <br><span>Bidang Dakwah</span> <br><span>Masjid Salman ITB</span> </h1>
 	  <h5>Bidang pengelola kegiatan dakwah dan pelayanan ibadah jamaah <br> yang diselenggarakan oleh YPM Salman ITB</h5>
@@ -154,13 +154,13 @@
 				<div class="col-lg-6">
 					<div class="s_Product_carousel">
 						<div class="single-prd-item">
-							<img class="img-fluid" src="{{ asset('karma/img/category/s-p1.jpg') }}" alt="">
+							<img class="img-fluid" src="{{ asset(''. env('linkpub') .'karma/img/category/s-p1.jpg') }}" alt="">
 						</div>
 						<div class="single-prd-item">
-							<img class="img-fluid" src="{{ asset('karma/img/category/s-p1.jpg') }}" alt="">
+							<img class="img-fluid" src="{{ asset(''. env('linkpub') .'karma/img/category/s-p1.jpg') }}" alt="">
 						</div>
 						<div class="single-prd-item">
-							<img class="img-fluid" src="{{ asset('karma/img/category/s-p1.jpg') }}" alt="">
+							<img class="img-fluid" src="{{ asset(''. env('linkpub') .'karma/img/category/s-p1.jpg') }}" alt="">
 						</div>
 					</div>
 				</div>
@@ -312,7 +312,7 @@
 								<div class="review_item">
 									<div class="media">
 										<div class="d-flex">
-											<img src="{{ asset('karma/img/product/review-1.png') }}" alt="">
+											<img src="{{ asset(''. env('linkpub') .'karma/img/product/review-1.png') }}" alt="">
 										</div>
 										<div class="media-body">
 											<h4>Blake Ruiz</h4>
@@ -327,7 +327,7 @@
 								<div class="review_item reply">
 									<div class="media">
 										<div class="d-flex">
-											<img src="{{ asset('karma/img/product/review-2.png') }}" alt="">
+											<img src="{{ asset(''. env('linkpub') .'karma/img/product/review-2.png') }}" alt="">
 										</div>
 										<div class="media-body">
 											<h4>Blake Ruiz</h4>
@@ -342,7 +342,7 @@
 								<div class="review_item">
 									<div class="media">
 										<div class="d-flex">
-											<img src="{{ asset('karma/img/product/review-3.png') }}" alt="">
+											<img src="{{ asset(''. env('linkpub') .'karma/img/product/review-3.png') }}" alt="">
 										</div>
 										<div class="media-body">
 											<h4>Blake Ruiz</h4>
@@ -421,7 +421,7 @@
 								<div class="review_item">
 									<div class="media">
 										<div class="d-flex">
-											<img src="{{ asset('karma/img/product/review-1.png') }}" alt="">
+											<img src="{{ asset(''. env('linkpub') .'karma/img/product/review-1.png') }}" alt="">
 										</div>
 										<div class="media-body">
 											<h4>Blake Ruiz</h4>
@@ -439,7 +439,7 @@
 								<div class="review_item">
 									<div class="media">
 										<div class="d-flex">
-											<img src="{{ asset('karma/img/product/review-2.png') }}" alt="">
+											<img src="{{ asset(''. env('linkpub') .'karma/img/product/review-2.png') }}" alt="">
 										</div>
 										<div class="media-body">
 											<h4>Blake Ruiz</h4>
@@ -457,7 +457,7 @@
 								<div class="review_item">
 									<div class="media">
 										<div class="d-flex">
-											<img src="{{ asset('karma/img/product/review-3.png') }}" alt="">
+											<img src="{{ asset(''. env('linkpub') .'karma/img/product/review-3.png') }}" alt="">
 										</div>
 										<div class="media-body">
 											<h4>Blake Ruiz</h4>
@@ -537,7 +537,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r1.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r1.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -549,7 +549,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r2.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r2.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -561,7 +561,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r3.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r3.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -573,7 +573,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r5.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r5.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -585,7 +585,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r6.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r6.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -597,7 +597,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r7.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r7.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -609,7 +609,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r9.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r9.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -621,7 +621,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r10.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r10.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -633,7 +633,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="{{ asset('karma/img/r11.jpg') }}" alt=""></a>
+								<a href="#"><img src="{{ asset(''. env('linkpub') .'karma/img/r11.jpg') }}" alt=""></a>
 								<div class="desc">
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
@@ -648,7 +648,7 @@
 				<div class="col-lg-3">
 					<div class="ctg-right">
 						<a href="#" target="_blank">
-							<img class="img-fluid d-block mx-auto" src="{{ asset('karma/img/category/c5.jpg') }}" alt="">
+							<img class="img-fluid d-block mx-auto" src="{{ asset(''. env('linkpub') .'karma/img/category/c5.jpg') }}" alt="">
 						</a>
 					</div>
 				</div>
@@ -701,14 +701,14 @@
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instragram Feed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
-							<li><img src="{{ asset('priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
+							<li><img src="{{ asset(''. env('linkpub') .'priba/img/jundi.png') }}" class="img-thumbnail" alt=""></li>
 						</ul>
 					</div>
 				</div>
@@ -734,21 +734,21 @@
 		</div>
 	</footer>
 {{-- my js --}}
-<script src="{{ asset('priba/js/script.js') }}"></script>
-	<script src="{{ asset('karma/js/vendor/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ asset(''. env('linkpub') .'priba/js/script.js') }}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/vendor/jquery-2.2.4.min.js')}}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	 crossorigin="anonymous"></script>
-	<script src="{{ asset('karma/js/vendor/bootstrap.min.js')}}"></script>
-	<script src="{{ asset('karma/js/jquery.ajaxchimp.min.js')}}"></script>
-	<script src="{{ asset('karma/js/jquery.nice-select.min.js')}}"></script>
-	<script src="{{ asset('karma/js/jquery.sticky.js')}}"></script>
-	<script src="{{ asset('karma/js/nouislider.min.js')}}"></script>
-	<script src="{{ asset('karma/js/jquery.magnific-popup.min.js')}}"></script>
-	<script src="{{ asset('karma/js/owl.carousel.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/vendor/bootstrap.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/jquery.ajaxchimp.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/jquery.nice-select.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/jquery.sticky.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/nouislider.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/owl.carousel.min.js')}}"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="{{ asset('karma/js/gmaps.min.js')}}"></script>
-	<script src="{{ asset('karma/js/main.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/gmaps.min.js')}}"></script>
+	<script src="{{ asset(''. env('linkpub') .'karma/js/main.js')}}"></script>
 	
 
 </div>

@@ -138,8 +138,8 @@
                                         <label for="image">Poster Kegiatan</label>
                                         <br>
                                         <!--  TAMPILKAN GAMBAR SAAT INI -->
-                                        <img src="{{ asset('storage/members/' . $member->image) }}" width="100px"
-                                            height="100px" alt="{{ $member->name }}">
+                                        <img src="{{ asset('storage' . env('linkstore') . '' . env('linkstore') . ' /members/' . $member->image) }}"
+                                            width="100px" height="100px" alt="{{ $member->name }}">
                                         <hr>
                                         <input type="file" name="image" class="form-control">
                                         <p><strong>Biarkan kosong jika tidak ingin mengganti gambar</strong></p>

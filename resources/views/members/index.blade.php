@@ -59,7 +59,7 @@
                                             @forelse ($member as $row)
                                                 <tr>
                                                     <td>
-                                                        {{-- <img src="{{ asset('storage/members/' . $row->image) }}"
+                                                        {{-- <img src="{{ asset(''. env('linkpub') .'storage'.env('linkstore').''.env('linkstore').' /members/' . $row->image) }}"
                                                             alt="{{ $row->name }}" width="100px" height="100px"> --}}
                                                         <img src="https://drive.google.com/uc?export=view&amp;id={{ $row->image }}"
                                                             alt="{{ $row->name }}" width="100px" height="100px">

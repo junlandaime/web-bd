@@ -59,7 +59,7 @@
                                             @forelse ($event as $row)
                                                 <tr>
                                                     <td>
-                                                        <img src="{{ asset('storage/events/' . $row->image) }}"
+                                                        <img src="{{ asset('storage' . env('linkstore') . '/events/' . $row->image) }}"
                                                             alt="{{ $row->name }}" width="100px" height="100px">
                                                     </td>
                                                     <td>

@@ -7,7 +7,7 @@
 @section('content')
     <!-- Jumbotron -->
 
-    <div class="jumbotron jumbotron-fluid" style="background: url({{ asset('priba/img/img14.jpg') }});">
+    <div class="jumbotron jumbotron-fluid" style="background: url({{ asset('' . env('linkpub') . 'priba/img/img14.jpg') }});">
         <div class="container">
             <h1 class="display-4">Selamat Datang di <br><span>Bidang Dakwah</span> <br><span>Masjid Salman ITB</span> </h1>
             <h5>Bidang pengelola kegiatan dakwah dan pelayanan ibadah jamaah <br> yang diselenggarakan oleh YPM Salman ITB
@@ -124,7 +124,8 @@
                                     <div class="single-deal">
                                         <div class="overlay"></div>
                                         {{-- <img class="img-fluid w-100" src="https://source.unsplash.com/500x500?{{ $products->categpry-name }}" alt=""> --}}
-                                        <img class="img-fluid" src="{{ asset('storage/events/' . $row->image) }}"
+                                        <img class="img-fluid"
+                                            src="{{ asset('storage' . env('linkstore') . '/events/' . $row->image) }}"
                                             alt="{{ $row->name }}">
                                         <a class="img-pop-up" target="_blank">
                                             <div class="deal-details">
@@ -240,6 +241,7 @@
                             <a href="#" class="next-arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div> --}}
                         {{ $events->links('vendor.pagination.karma') }}
+                        {{ env('linkpub') }}
                     </div>
 
                     <!-- End Filter Bar -->
