@@ -121,12 +121,12 @@
                                     <h2 class="lead"><b>Ustad Andri Mulyadi</b></h2>
                                     <p class="text-muted text-sm"><b>Spesialisasi: </b> Hukum Waris / Islam / Adab Adab /
                                         Hadits</p>
-                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                    {{-- <ul class="ml-4 mb-0 fa-ul text-muted">
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span>
                                             Address: Demo Street 123, Demo City 04312, NJ</li>
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>
                                             Phone #: + 800 - 12 12 23 52</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                                 <div class="col-5 text-center">
                                     <img src="{{ asset('' . env('linkpub') . 'ecommerce/dist/img/imagead.png') }}"
@@ -148,12 +148,12 @@
                                     <h2 class="lead"><b>Ustad Zulkarnain</b></h2>
                                     <p class="text-muted text-sm"><b>Spesialisasi: </b> Hukum Waris / Bahasa Arab / Al Quran
                                         / Hadits </p>
-                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                    {{-- <ul class="ml-4 mb-0 fa-ul text-muted">
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span>
                                             Address: Demo Street 123, Demo City 04312, NJ</li>
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>
                                             Phone #: + 800 - 12 12 23 52</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                                 <div class="col-5 text-center">
                                     <img src="{{ asset('' . env('linkpub') . 'ecommerce/dist/img/imagezu.png') }}"
@@ -175,12 +175,12 @@
                                     <h2 class="lead"><b>Ustad Aceng Saefudin</b></h2>
                                     <p class="text-muted text-sm"><b>Spesialisasi: </b> Hukum Fiqh / Hadits / Al Quran /
                                         Pernikahan </p>
-                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                    {{-- <ul class="ml-4 mb-0 fa-ul text-muted">
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span>
                                             Address: Demo Street 123, Demo City 04312, NJ</li>
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>
                                             Phone #: + 800 - 12 12 23 52</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                                 <div class="col-5 text-center">
                                     <img src="{{ asset('' . env('linkpub') . 'ecommerce/dist/img/imageac.png') }}"

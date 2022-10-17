@@ -65,7 +65,7 @@
                                 {{-- <img class="img-fluid w-100" src="https://source.unsplash.com/450x180?Kajian" alt=""> --}}
                                 <img class="img-fluid w-100" src="{{ asset('' . env('linkpub') . 'priba/img/kateg4.png') }}"
                                     alt="">
-                                <a href="https://source.unsplash.com/500x500?Kajian" class="img-pop-up" target="_blank">
+                                <a href="/event" class="img-pop-up" target="_blank">
                                     <div class="deal-details">
                                         <h6 class="deal-title">Kajian</h6>
                                     </div>
@@ -78,7 +78,7 @@
                                 {{-- <img class="img-fluid w-100" src="https://source.unsplash.com/210x180?Pendidikan" alt=""> --}}
                                 <img class="img-fluid w-100" src="{{ asset('' . env('linkpub') . 'priba/img/kateg3.png') }}"
                                     alt="">
-                                <a href="img/category/c2.jpg" class="img-pop-up" target="_blank">
+                                <a href="/event" class="img-pop-up" target="_blank">
                                     <div class="deal-details">
                                         <h6 class="deal-title">Pendidikan</h6>
                                     </div>
@@ -90,7 +90,7 @@
                                 <div class="overlay"></div>
                                 <img class="img-fluid w-100" src="{{ asset('' . env('linkpub') . 'priba/img/kateg2.png') }}"
                                     alt="">
-                                <a href="img/category/c3.jpg" class="img-pop-up" target="_blank">
+                                <a href="/event" class="img-pop-up" target="_blank">
                                     <div class="deal-details">
                                         <h6 class="deal-title">Pernikahan</h6>
                                     </div>
@@ -102,7 +102,7 @@
                                 <div class="overlay"></div>
                                 <img class="img-fluid w-100" src="{{ asset('' . env('linkpub') . 'priba/img/kateg5.png') }}"
                                     alt="">
-                                <a href="img/category/c4.jpg" class="img-pop-up" target="_blank">
+                                <a href="/event" class="img-pop-up" target="_blank">
                                     <div class="deal-details">
                                         <h6 class="deal-title">Islam</h6>
                                     </div>
@@ -116,7 +116,7 @@
                         <div class="overlay"></div>
                         <img class="img-fluid w-100" src="{{ asset('' . env('linkpub') . 'priba/img/kateg1.png') }}"
                             alt="">
-                        <a href="img/category/c5.jpg" class="img-pop-up" target="_blank">
+                        <a href="/event" class="img-pop-up" target="_blank">
                             <div class="deal-details">
                                 <h6 class="deal-title">Al Qur'an</h6>
                             </div>
