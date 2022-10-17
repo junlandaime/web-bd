@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('' . env('linkpub') . 'assets/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('' . env('linkpub') . 'priba/img/favicon.png') }}">
 
     @yield('title')
 
@@ -11,7 +13,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('' . env('linkpub') . 'ecommerce/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('' . env('linkpub') . 'ecommerce/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
@@ -56,7 +59,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/"><img
-                        src="{{ asset('' . env('linkpub') . 'priba/img/logoBD.png') }}" width="60">Bidang Dakwah</a>
+                        src="{{ asset('' . env('linkpub') . 'priba/img/logoBD.png') }}" width="60">Bidang
+                    Dakwah</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

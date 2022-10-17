@@ -165,9 +165,9 @@
                             <div class="col-4 col-md-4">
                                 @switch($photo[1])
                                     @case('VIDEO')
-                                        <video width="70" class="img-thumbnail">
-                                            <source src="{{ $photo[2] }}" type="video/mp4" />
-                                        </video>
+                                        <li><video width="100%" class="img-thumbnail">
+                                                <source src="{{ $photo[2] }}" type="video/mp4" />
+                                            </video></li>
                                     @break
 
                                     @default

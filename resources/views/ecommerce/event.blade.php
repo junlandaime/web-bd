@@ -52,18 +52,15 @@
                                     href="{{ $category->child_count > 0 ? '#' . $category->slug : url('/category/' . $category->slug) }}"
                                     aria-expanded="false" aria-controls="fruitsVegetable"><span
                                         class="lnr lnr-arrow-right"></span>{{ $category->name }}<span
-                                        class="number">(53)</span></a>
+                                        class="number">({{ $category->event->count() }})</span></a>
                                 <ul class="collapse" id="{{ $category->slug }}" data-toggle="collapse" aria-expanded="true"
                                     aria-controls="{{ $category->slug }}">
                                     @foreach ($category->child as $child)
                                         <li class="main-nav-list child"><a
                                                 href="{{ url('/category/' . $child->slug) }}">{{ $child->name }}<span
-                                                    class="number">(13)</span></a></li>
+                                                    class="number">({{ $child->event->count() }})</span></a></li>
                                     @endforeach
-                                    {{-- <li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-                            <li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-                            <li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-                            <li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li> --}}
+
                                 </ul>
                             </li>
                         @endforeach
@@ -71,20 +68,7 @@
 
                     </ul>
                 </div>
-                {{-- <div class="sidebar-filter mt-50">
-                    <div class="top-filter-head">By Tags</div>
-                    <div class="common-filter">
-                        <div class="head">Brands</div>
-                        <form action="#">
-                            <ul>
-                                <li class="filter-list"><input class="pixel-radio" type="radio" id="apple"
-                                        name="brand"><label for="apple">Apple<span>(29)</span></label></li>
 
-                            </ul>
-                        </form>
-                    </div>
-
-                </div> --}}
             </div>
             <div class="col-xl-9 col-lg-8 col-md-7">
                 <!-- Start Filter Bar -->
@@ -241,7 +225,7 @@
                             <a href="#" class="next-arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div> --}}
                         {{ $events->links('vendor.pagination.karma') }}
-                        {{ env('linkpub') }}
+
                     </div>
 
                     <!-- End Filter Bar -->

@@ -48,7 +48,7 @@
                     <div class="s_Product_carousel">
                         <div class="single-prd-item">
                             <img class="img-fluid"
-                                src="{{ asset('storage' . env('linkstore') . '' . env('linkstore') . ' /events/' . $event->image) }}"
+                                src="{{ asset('storage' . env('linkstore') . '/events/' . $event->image) }}"
                                 alt="{{ $event->name }}">
                         </div>
                         {{-- <div class="single-prd-item">
