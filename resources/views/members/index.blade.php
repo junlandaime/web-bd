@@ -47,9 +47,7 @@
                                     <table class="table table-hover table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Foto</th>
                                                 <th>member</th>
-                                                <th>Harga</th>
                                                 <th>Created At</th>
                                                 <th>Status</th>
                                                 <th>Aksi</th>
@@ -58,21 +56,16 @@
                                         <tbody>
                                             @forelse ($member as $row)
                                                 <tr>
-                                                    <td>
-                                                        {{-- <img src="{{ asset(''. env('linkpub') .'storage'.env('linkstore').''.env('linkstore').' /members/' . $row->image) }}"
-                                                            alt="{{ $row->name }}" width="100px" height="100px"> --}}
-                                                        <img src="https://drive.google.com/uc?export=view&amp;id={{ $row->image }}"
-                                                            alt="{{ $row->name }}" width="100px" height="100px">
-                                                    </td>
+
                                                     <td>
                                                         <strong>{{ $row->name }}</strong><br>
 
-                                                        <label>Kategori: <span {{-- class="badge bg-gradient-info">{{ $row->category->name }}</span></label><br> --}} <label>Jumlah
-                                                                Pertemuan: <span {{-- class="badge bg-gradient-info">{{ $row->meet }}</span></label> --}} </td>
-                                                    <td>Rp {{ number_format($row->phone_number) }}</td>
+                                                        <label><span>{{ $row->email }}</span></label>
+                                                        </label>
+                                                    </td>
                                                     <td>
                                                         <span>{{ $row->created_at->format('d-m-Y') }}</span> <br>
-                                                        <span>Lahir {{ $row->tanggal_lahir->format('d-m-Y') }}
+                                                        {{-- <span>Lahir {{ $row->tanggal_lahir->format('d-m-Y') }} --}}
 
                                                     </td>
 

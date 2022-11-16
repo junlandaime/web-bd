@@ -18,9 +18,6 @@ class CreateMembersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password')->nullable();
-            $table->timestamp('tanggal_lahir');
-            $table->string('phone_number');
-            $table->string('address');
             $table->string('activate_token')->nullable();
             $table->boolean('status')->default(false);
             $table->timestamps();

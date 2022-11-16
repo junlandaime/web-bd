@@ -442,6 +442,8 @@
         integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
         data-cf-beacon='{"rayId":"75804a81a9e2880e","token":"1b7cbb72744b40c580f8633c6b62637e","version":"2022.8.1","si":100}'
         crossorigin="anonymous"></script>
+
+    @yield('js')
 </body>
 
 </html>

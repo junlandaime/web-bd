@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Ecommerce;
 
-use App\Http\Controllers\Controller;
+use App\Models\Event;
 use App\Models\Member;
+use App\Models\ArsipEvent;
 use Illuminate\Http\Request;
+use App\Models\ProfileMember;
+use App\Http\Controllers\Controller;
 
 class LoginController extends Controller
 {
@@ -37,8 +40,14 @@ class LoginController extends Controller
 
     public function dashboard()
     {   
-        $member = Member::where('id', 1)->first();
-        return view('ecommerce.dashboard', compact('member'));
+        $arsip = ArsipEvent::with(['profil', 'data'])->first();
+        // dd($arsip->profil[0]->email);
+        // dd(auth()->guard('member')->user()->email);
+        $member = Member::where('email', auth()->guard('member')->user()->email)->first();
+        $profil = ProfileMember::where('email', auth()->guard('member')->user()->email)->get();
+        
+        $data = $arsip->profil[0]->where('email', auth()->guard('member')->user()->email)->first();
+        return view('ecommerce.dashboard', compact('member', 'profil', 'data'));
     }
 
     public function logout()

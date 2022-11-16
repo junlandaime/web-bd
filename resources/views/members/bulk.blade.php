@@ -26,17 +26,7 @@
 
                                     <!-- SETIAP USER HARUS MEMILIH KATEGORI member TERKAIT -->
                                     <div class="form-group">
-                                        <label for="category_id">Kategori</label>
-                                        <select name="category_id" class="form-control">
-                                            <option value="">Pilih</option>
-                                            @foreach ($category as $row)
-                                                <option value="{{ $row->id }}"
-                                                    {{ old('category_id') == $row->id ? 'selected' : '' }}>
-                                                    {{ $row->name }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        <p class="text-danger">{{ $errors->first('category_id') }}</p>
+
                                     </div>
                                     <div class="form-group">
                                         <label for="file">File Excel</label>

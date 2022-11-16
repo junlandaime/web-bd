@@ -1,14 +1,16 @@
 <?php
 
+use Maatwebsite\Excel\Row;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MemberController;
-use App\Http\Controllers\Ecommerce\LoginController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ArsipEventController;
 use App\Http\Controllers\Ecommerce\FrontController;
-use Maatwebsite\Excel\Row;
+use App\Http\Controllers\Ecommerce\LoginController;
+use App\Models\ProfileMember;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +39,12 @@ Route::group(['prefix' => 'administrator', 'middleware' => 'auth'], function () 
     Route::resource('member', MemberController::class)->except(['show']);
     Route::get('/member/bulk', [MemberController::class, 'massUploadForm'])->name('member.bulk');
     Route::post('/member/bulk', 'App\Http\Controllers\memberController@massUpload')->name('member.saveBulk');
+    Route::get('/arsip/bulk', [ArsipEventController::class, 'massUploadForm'])->name('arsip.bulk');
+    Route::post('/arsip/bulk', 'App\Http\Controllers\ArsipEventController@massUpload')->name('arsip.saveBulk');
+    Route::get('/arsipdata/bulk', [ArsipEventController::class, 'datamassUploadForm'])->name('arsipdata.bulk');
+    Route::post('/arsipdata/bulk', 'App\Http\Controllers\ArsipEventController@datamassUpload')->name('arsipdata.saveBulk');
+    Route::get('/profil/bulk', [MemberController::class, 'profilmassUploadForm'])->name('profil.bulk');
+    Route::post('/profil/bulk', 'App\Http\Controllers\MemberController@profilmassUpload')->name('profil.saveBulk');
 
 });
 
@@ -67,5 +75,6 @@ Route::group(['prefix' => 'member', 'namespace' => 'Ecommerce'], function() {
     Route::group(['middleware' => 'member'], function() {
         Route::get('dashboard', [LoginController::class, 'dashboard'])->name('member.dashboard');
         Route::get('logout', [LoginController::class, 'logout'])->name('member.logout');
+        Route::get('/dashboard/event/{slug}', [MemberController::class, 'showourevent'])->name('member.show_event');
     });
 });
