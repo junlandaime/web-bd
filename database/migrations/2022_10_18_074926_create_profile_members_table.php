@@ -28,9 +28,9 @@ class CreateProfileMembersTable extends Migration
             $table->string('suku');
             $table->string('kondisi');
             $table->string('foto');
-            $table->string('univ');
-            $table->string('jurusan');
-            $table->string('pekerjaan');
+            $table->string('univ')->nullable();;
+            $table->string('jurusan')->nullable();;
+            $table->string('pekerjaan')->nullable();;
             $table->boolean('status')->default(false);
             $table->text('dll');
             $table->timestamp('input_data')->nullable();
