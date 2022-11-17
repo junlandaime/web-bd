@@ -17,7 +17,7 @@
                         <div class="card-body text-center">
                             <div class="info mb-4">
                                 <img class="avatar avatar-xxl" alt="Image placeholder"
-                                    src="http://web-bd.test/priba/img/kateg1.png">
+                                    src="https://bidangdakwah.salmanitb.com/public/priba/img/kateg1.png">
                             </div>
                             <h4 class="mb-0 font-weight-bolder">Hai</h4>
                             <p class="mb-4">Enter email to check your member account.</p>
